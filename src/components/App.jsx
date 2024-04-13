@@ -1,16 +1,26 @@
-export const App = () => {
+import React, { Suspense, lazy } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import MainLayout from '../layouts/MainLayout';
+
+const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
+const Catalog = lazy(() => import('../pages/Catalog/Catalog'));
+const Favorites = lazy(() => import('../pages/Favorites/Favorites'));
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="catalog" element={<Catalog />} />
+            <Route path="favorites" element={<Favorites />} />
+            <Route path="*" element={<Navigate replace to="/" />} />
+          </Route>
+        </Routes>
+      </Suspense>
+    </>
   );
 };
+
+export default App;
