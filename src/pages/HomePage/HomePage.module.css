@@ -1,15 +1,62 @@
-.Title {
-  font-size: 2rem;
-  margin-bottom: 20px;
+/* src/pages/HomePage/HomePage.module.css */
+.homepage {
   text-align: center;
 }
 
-.Error {
-  margin: 20px 0;
-  padding: 10px;
-  background-color: #ffbaba;
-  color: #d8000c;
+.hero {
+  padding: 50px;
+  background: url('/images/hero.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-size: 48px;
+  color: #f7f7f7;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #f2f4f7;
+}
+
+.ctaButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #f2f4f7;
+  background-color: #e44848;
+  border: none;
   border-radius: 5px;
-  border: 1px solid #d8000c;
-  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.features {
+  padding: 50px 0;
+}
+
+.featuresTitle {
+  font-size: 36px;
+  color: #475467;
+  margin-bottom: 30px;
+}
+
+.featuresList {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.featureItem {
+  max-width: 200px;
+}
+
+.featureTitle {
+  font-size: 24px;
+  color: #ffc531;
+  margin-bottom: 15px;
+}
+
+.featureDescription {
+  font-size: 16px;
+  color: #475467;
 }
