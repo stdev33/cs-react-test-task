@@ -1,0 +1,134 @@
+.advertItem {
+  display: flex;
+  padding: 24px;
+  gap: 24px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  overflow: hidden;
+  max-width: 888px;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  width: 290px;
+  height: 310px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details {
+  display: flex;
+  width: 526px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  width: 526px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.titleAndPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  align-self: stretch;
+}
+
+.priceAndFavorites {
+  display: flex;
+  width: 158px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  margin: 0;
+  color: #101828;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+
+.price {
+  color: #101828;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+
+.favoritesButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.ratingAndLocation {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.description {
+  display: -webkit-box;
+  width: 525px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: #475467;
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.featuresList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Відстань між елементами */
+  margin-bottom: 16px; /* Відстань до кнопки "Показати більше" */
+}
+
+.showMoreButton {
+  display: flex;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-style: none;
+  border-radius: 200px;
+  background: #e44848;
+  color: #fff;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: -0.08px;
+}
+
+.showMoreButton:hover {
+  background: #d84343;
+}
