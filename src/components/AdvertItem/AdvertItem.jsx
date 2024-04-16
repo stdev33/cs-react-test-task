@@ -1,4 +1,5 @@
 import React from 'react';
+import FavoriteToggle from '../FavoriteToggle/FavoriteToggle';
 import Rating from '../Rating/Rating';
 import Location from '../Location/Location';
 import EquipmentList from '../EquipmentList/EquipmentList';
@@ -15,20 +16,18 @@ const AdvertItem = ({ data, onShowMore }) => {
           <div className={css.titleAndPrice}>
             <h3 className={css.title}>{data.name}</h3>
             <div className={css.priceAndFavorites}>
-              <span className={css.price}>€{data.price}</span>
-              <button className={css.favoritesButton}>❤</button>
+              <span className={css.price}>€{data.price.toFixed(2)}</span>
+              <FavoriteToggle isFavorite={false} />
             </div>
           </div>
           <div className={css.ratingAndLocation}>
             <Rating value={data.rating} reviewsCount={data.reviews.length} />
-            <div className={css.location}>{data.location}</div>
+            <Location value={data.location} />
           </div>
         </div>
 
         <p className={css.description}>{data.description}</p>
-        <div className={css.equipmentList}>
-          {/* Оснащення буде компонентом EquipmentList або просто іконками, якщо компонент недоступний */}
-        </div>
+        <EquipmentList data={data} />
         <button
           className={css.showMoreButton}
           onClick={() => onShowMore(data._id)}

@@ -31,7 +31,8 @@
   letter-spacing: -0.08px;
 }
 
-.searchButton:hover {
+.searchButton:hover,
+.searchButton:focus {
   background: #d84343;
 }
 

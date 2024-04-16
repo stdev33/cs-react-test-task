@@ -75,13 +75,6 @@
   line-height: 1.25em;
 }
 
-.favoritesButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
 .ratingAndLocation {
   display: flex;
   align-items: flex-start;
@@ -103,13 +96,6 @@
   line-height: 1.5em;
 }
 
-.featuresList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px; /* Відстань між елементами */
-  margin-bottom: 16px; /* Відстань до кнопки "Показати більше" */
-}
-
 .showMoreButton {
   display: flex;
   padding: 16px 40px;
@@ -129,6 +115,7 @@
   letter-spacing: -0.08px;
 }
 
-.showMoreButton:hover {
+.showMoreButton:hover,
+.showMoreButton:focus {
   background: #d84343;
 }
