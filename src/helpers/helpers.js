@@ -23,7 +23,7 @@ const descriptionsMapping = {
   transmission: '{}',
   engine: '{}',
   airConditioner: '{} Air conditioner',
-  bathroom: 'Shower',
+  bathroom: 'Bathroom',
   kitchen: 'Kitchen',
   beds: '{} beds',
   TV: 'TV',
