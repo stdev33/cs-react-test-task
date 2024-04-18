@@ -1,0 +1,13 @@
+.favoritesButton {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.favoritesIcon {
+  fill: currentColor;
+}
+
+.favoritesIcon:hover {
+  fill: #d84343;
+}

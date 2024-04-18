@@ -1,15 +1,42 @@
-.Title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
+.catalogPage {
+  display: flex;
+  gap: 20px;
 }
 
-.Error {
-  margin: 20px 0;
-  padding: 10px;
-  background-color: #ffbaba;
-  color: #d8000c;
-  border-radius: 5px;
-  border: 1px solid #d8000c;
-  text-align: center;
+.filtersColumn {
+  width: 25%;
+  padding: 20px;
+}
+
+.searchArea {
+  margin-top: 20px;
+}
+
+.searchButton {
+  width: 173px;
+  display: inline-flex;
+  padding: 16px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-style: none;
+  border-radius: 200px;
+  background: #e44848;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: -0.08px;
+}
+
+.searchButton:hover,
+.searchButton:focus {
+  background: #d84343;
+}
+
+.advertsColumn {
+  width: 75%;
+  padding: 20px;
 }
