@@ -17,7 +17,7 @@ const AdvertItem = ({ data, onShowMore }) => {
             <h3 className={css.title}>{data.name}</h3>
             <div className={css.priceAndFavorites}>
               <span className={css.price}>€{data.price.toFixed(2)}</span>
-              <FavoriteToggle isFavorite={false} />
+              <FavoriteToggle advert={data} />
             </div>
           </div>
           <div className={css.ratingAndLocation}>
