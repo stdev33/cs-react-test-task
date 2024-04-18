@@ -1,7 +1,33 @@
+.advertsListWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .advertsList {
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 0;
   gap: 32px;
+  margin: 0;
+}
+
+.loadMoreButton {
+  display: inline-flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 200px;
+  border: 1px solid rgba(71, 84, 103, 0.2);
+  background: transparent;
+  color: var(--Main, #101828);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: -0.08px;
+  margin-top: 50px;
 }

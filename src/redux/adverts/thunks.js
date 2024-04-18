@@ -5,9 +5,11 @@ const API_URL = 'https://661b9cd765444945d04fe3ae.mockapi.io/api/v1/advert';
 
 export const fetchAdverts = createAsyncThunk(
   'adverts/fetchAll',
-  async (_, { rejectWithValue }) => {
+  async ({ page = 1, limit = 10 }, { rejectWithValue }) => {
     try {
-      const response = await axios.get(API_URL);
+      const response = await axios.get(
+        `${API_URL}?page=${page}&limit=${limit}`
+      );
       return response.data;
     } catch (error) {
       console.log('error: ', error);

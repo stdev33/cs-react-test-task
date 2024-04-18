@@ -15,7 +15,13 @@ export const advertsSlice = createSlice({
       })
       .addCase(fetchAdverts.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.items = action.payload;
+        action.payload.forEach(item => {
+          if (
+            !state.items.some(existingItem => existingItem._id === item._id)
+          ) {
+            state.items.push(item);
+          }
+        });
         state.error = null;
       })
       .addCase(fetchAdverts.rejected, (state, action) => {
