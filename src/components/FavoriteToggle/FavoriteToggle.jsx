@@ -1,4 +1,5 @@
 import React from 'react';
+import icons from '../../icons/icons.svg';
 import css from './FavoriteToggle.module.css';
 
 const FavoriteToggle = ({ isFavorite, onToggle, width = 24, height = 24 }) => {
@@ -10,7 +11,7 @@ const FavoriteToggle = ({ isFavorite, onToggle, width = 24, height = 24 }) => {
         height={`${height}`}
       >
         <use
-          xlinkHref={`/icons/icons.svg#${
+          xlinkHref={`${icons}#${
             isFavorite ? 'icon-heart-selected' : 'icon-heart'
           }`}
         ></use>
