@@ -23,7 +23,7 @@
   border: 1px solid rgba(71, 84, 103, 0.2);
   background: transparent;
   color: var(--Main, #101828);
-  font-family: Inter;
+  font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -44,7 +44,7 @@
   align-items: center;
   gap: 10px;
   color: var(--Main, #101828);
-  font-family: Inter;
+  font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
