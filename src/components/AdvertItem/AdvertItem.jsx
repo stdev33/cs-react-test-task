@@ -16,7 +16,15 @@ const AdvertItem = ({ data, onShowMore }) => {
           <div className={css.titleAndPrice}>
             <h3 className={css.title}>{data.name}</h3>
             <div className={css.priceAndFavorites}>
-              <span className={css.price}>€{data.price.toFixed(2)}</span>
+              <span className={css.price}>
+                €
+                {data.price
+                  .toLocaleString('de-DE', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })
+                  .replace(/\./g, '')}
+              </span>
               <FavoriteToggle advert={data} />
             </div>
           </div>
