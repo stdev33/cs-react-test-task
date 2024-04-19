@@ -20,7 +20,6 @@ const AdvertsList = () => {
     dispatch(fetchAdverts({ page: currentPage, limit: ITEMS_PER_PAGE }));
   }, [dispatch, currentPage]);
 
-
   const handleLoadMore = () => {
     setCurrentPage(prevPage => prevPage + 1);
   };
@@ -28,8 +27,6 @@ const AdvertsList = () => {
   return (
     <div className={css.advertsListWrapper}>
       <ul className={css.advertsList}>
-        {isLoading && <p>Loading...</p>}
-        {error && <p>Error: {error}</p>}
         {visibleAdverts.map(itemData => (
           <AdvertItem
             key={itemData._id}
@@ -38,9 +35,17 @@ const AdvertsList = () => {
           />
         ))}
       </ul>
-      <button onClick={handleLoadMore} className={css.loadMoreButton}>
-        Load more
-      </button>
+
+      {error && <p>Error: {error}</p>}
+      {isLoading ? (
+        <p className={css.loading}>Loading...</p>
+      ) : (
+        visibleAdverts.length > 0 && (
+          <button onClick={handleLoadMore} className={css.loadMoreButton}>
+            Load more
+          </button>
+        )
+      )}
     </div>
   );
 };
