@@ -5,6 +5,7 @@ import Location from '../Location/Location';
 import EquipmentList from '../EquipmentList/EquipmentList';
 import Modal from '../Modal/Modal';
 import AdvertDetails from '../AdvertDetails/AdvertDetails';
+import { formatPrice } from '../../helpers/helpers';
 import css from './AdvertItem.module.css';
 
 const AdvertItem = ({ data }) => {
@@ -28,15 +29,7 @@ const AdvertItem = ({ data }) => {
           <div className={css.titleAndPrice}>
             <h3 className={css.title}>{data.name}</h3>
             <div className={css.priceAndFavorites}>
-              <span className={css.price}>
-                €
-                {data.price
-                  .toLocaleString('de-DE', {
-                    minimumFractionDigits: 2,
-                    maximumFractionDigits: 2,
-                  })
-                  .replace(/\./g, '')}
-              </span>
+              <span className={css.price}>€{formatPrice(data.price)}</span>
               <FavoriteToggle advert={data} />
             </div>
           </div>
@@ -52,7 +45,7 @@ const AdvertItem = ({ data }) => {
           Show more
         </button>
         <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-          <AdvertDetails data={data} />
+          <AdvertDetails data={data} onClose={handleCloseModal} />
         </Modal>
       </div>
     </li>
