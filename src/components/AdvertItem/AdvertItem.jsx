@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FavoriteToggle from '../FavoriteToggle/FavoriteToggle';
 import Rating from '../Rating/Rating';
 import Location from '../Location/Location';
 import EquipmentList from '../EquipmentList/EquipmentList';
+import Modal from '../Modal/Modal';
+import AdvertDetails from '../AdvertDetails/AdvertDetails';
 import css from './AdvertItem.module.css';
 
-const AdvertItem = ({ data, onShowMore }) => {
+const AdvertItem = ({ data }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleShowMore = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <li className={css.advertItem}>
       <div className={css.imageWrapper}>
@@ -36,12 +48,12 @@ const AdvertItem = ({ data, onShowMore }) => {
 
         <p className={css.description}>{data.description}</p>
         <EquipmentList data={data} />
-        <button
-          className={css.showMoreButton}
-          onClick={() => onShowMore(data._id)}
-        >
+        <button className={css.showMoreButton} onClick={handleShowMore}>
           Show more
         </button>
+        <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+          <AdvertDetails data={data} />
+        </Modal>
       </div>
     </li>
   );

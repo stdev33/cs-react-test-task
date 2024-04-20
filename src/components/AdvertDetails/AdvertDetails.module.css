@@ -1,0 +1,10 @@
+.advertDetailsContainer {
+  max-width: 982px;
+  display: inline-flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  border-radius: 20px;
+  background: #fff;
+}
