@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Rating from '../Rating/Rating';
 import Location from '../Location/Location';
 import icons from '../../icons/icons.svg';
 import { formatPrice } from '../../helpers/helpers';
+import Features from '../Features/Features';
 import css from './AdvertDetails.module.css';
 
 const AdvertDetails = ({ data, onClose }) => {
+  const [activeTab, setActiveTab] = useState('features');
+
+  const handleTabClick = tab => {
+    setActiveTab(tab);
+  };
+
   return (
     <div className={css.advertDetailsContainer}>
       <div className={css.header}>
@@ -37,6 +44,26 @@ const AdvertDetails = ({ data, onClose }) => {
         </ul>
         <div className={css.card}>
           <p className={css.description}>{data.description}</p>
+          <div className={css.tabsHeader}>
+            <div className={css.tabButtons}>
+              <button
+                className={activeTab === 'features' ? css.activeTab : css.tab}
+                onClick={() => handleTabClick('features')}
+              >
+                Features
+              </button>
+              <button
+                className={activeTab === 'reviews' ? css.activeTab : css.tab}
+                onClick={() => handleTabClick('reviews')}
+              >
+                Reviews
+              </button>
+            </div>
+            <div className={css.tabsHeaderBottom}></div>
+          </div>
+          <div className={css.detailsAndBookingForm}>
+            <Features data={data} />
+          </div>
         </div>
       </div>
     </div>
