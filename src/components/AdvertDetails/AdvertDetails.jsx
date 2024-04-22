@@ -4,6 +4,7 @@ import Location from '../Location/Location';
 import icons from '../../icons/icons.svg';
 import { formatPrice } from '../../helpers/helpers';
 import Features from '../Features/Features';
+import Reviews from '../Reviews/Reviews';
 import css from './AdvertDetails.module.css';
 
 const AdvertDetails = ({ data, onClose }) => {
@@ -62,7 +63,8 @@ const AdvertDetails = ({ data, onClose }) => {
             <div className={css.tabsHeaderBottom}></div>
           </div>
           <div className={css.detailsAndBookingForm}>
-            <Features data={data} />
+            {activeTab === 'features' && <Features data={data} />}
+            {activeTab === 'reviews' && <Reviews data={data} />}
           </div>
         </div>
       </div>

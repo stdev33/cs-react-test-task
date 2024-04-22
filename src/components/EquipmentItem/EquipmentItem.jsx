@@ -2,9 +2,9 @@ import React from 'react';
 import icons from '../../icons/icons.svg';
 import css from './EquipmentItem.module.css';
 
-const EquipmentItem = ({ id, data }) => {
+const EquipmentItem = ({ data }) => {
   return (
-    <li key={id} className={css.equipmentItem}>
+    <li className={css.equipmentItem}>
       <svg width="20" height="20">
         <use xlinkHref={`${icons}#${data.icon}`}></use>
       </svg>

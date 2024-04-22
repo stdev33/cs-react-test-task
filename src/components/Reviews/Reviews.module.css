@@ -1,0 +1,7 @@
+.reviewsList {
+  display: flex;
+  max-width: 430px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}

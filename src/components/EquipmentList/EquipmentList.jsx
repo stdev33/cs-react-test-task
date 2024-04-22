@@ -8,11 +8,7 @@ const EquipmentList = ({ data }) => {
   return (
     <ul className={css.equipmentList}>
       {equipmentList.map((item, index) => (
-        <EquipmentItem
-          key={`${data._id}_${index}`}
-          id={`${data._id}_${index}`}
-          data={item}
-        />
+        <EquipmentItem key={`${data._id}_${index}`} data={item} />
       ))}
     </ul>
   );

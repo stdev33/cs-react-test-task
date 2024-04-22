@@ -1,0 +1,18 @@
+.ratingStarsList {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  list-style: none;
+}
+
+.ratingStarOn {
+  fill: #ffc531;
+  stroke: #ffc531;
+  stroke-width: 1.2px;
+}
+
+.ratingStarOff {
+  fill: #f2f4f7;
+  stroke: #f2f4f7;
+  stroke-width: 1.2px;
+}
