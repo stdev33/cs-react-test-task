@@ -5,6 +5,7 @@ import icons from '../../icons/icons.svg';
 import { formatPrice } from '../../helpers/helpers';
 import Features from '../Features/Features';
 import Reviews from '../Reviews/Reviews';
+import BookingForm from '../BookingForm/BookingForm';
 import css from './AdvertDetails.module.css';
 
 const AdvertDetails = ({ data, onClose }) => {
@@ -65,6 +66,15 @@ const AdvertDetails = ({ data, onClose }) => {
           <div className={css.detailsAndBookingForm}>
             {activeTab === 'features' && <Features data={data} />}
             {activeTab === 'reviews' && <Reviews data={data} />}
+            <div className={css.bookingFormContainer}>
+              <div className={css.bookingFormTextContainer}>
+                <p className={css.bookingFormTitle}>Book your campervan now</p>
+                <p className={css.bookingFormText}>
+                  Stay connected! We are always ready to help you.
+                </p>
+              </div>
+              <BookingForm />
+            </div>
           </div>
         </div>
       </div>

@@ -177,3 +177,44 @@
   gap: 24px;
   align-self: stretch;
 }
+
+.bookingFormContainer {
+  width: 400px;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 10px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+}
+
+.bookingFormTextContainer {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.bookingFormTitle {
+  color: #101828;
+  font-family: inherit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+.bookingFormText {
+  align-self: stretch;
+  color: #475467;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0;
+}
