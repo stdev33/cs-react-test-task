@@ -1,32 +1,36 @@
 {
   "files": {
-    "main.css": "/cs-react-test-task/static/css/main.2212e88e.css",
-    "main.js": "/cs-react-test-task/static/js/main.5fbe48ea.js",
+    "main.css": "/cs-react-test-task/static/css/main.eeddeec2.css",
+    "main.js": "/cs-react-test-task/static/js/main.9a4864f6.js",
     "static/css/674.f23d9db5.chunk.css": "/cs-react-test-task/static/css/674.f23d9db5.chunk.css",
     "static/js/674.20b0fb9e.chunk.js": "/cs-react-test-task/static/js/674.20b0fb9e.chunk.js",
-    "static/css/846.02549c11.chunk.css": "/cs-react-test-task/static/css/846.02549c11.chunk.css",
-    "static/js/846.15a07390.chunk.js": "/cs-react-test-task/static/js/846.15a07390.chunk.js",
-    "static/css/199.2ff4d3bb.chunk.css": "/cs-react-test-task/static/css/199.2ff4d3bb.chunk.css",
-    "static/js/199.606e2885.chunk.js": "/cs-react-test-task/static/js/199.606e2885.chunk.js",
-    "static/js/71.bcfb5224.chunk.js": "/cs-react-test-task/static/js/71.bcfb5224.chunk.js",
+    "static/css/238.4adb9ea7.chunk.css": "/cs-react-test-task/static/css/238.4adb9ea7.chunk.css",
+    "static/js/238.f90595fd.chunk.js": "/cs-react-test-task/static/js/238.f90595fd.chunk.js",
+    "static/css/18.4125ce16.chunk.css": "/cs-react-test-task/static/css/18.4125ce16.chunk.css",
+    "static/js/18.544ed18c.chunk.js": "/cs-react-test-task/static/js/18.544ed18c.chunk.js",
+    "static/css/830.e48043b5.chunk.css": "/cs-react-test-task/static/css/830.e48043b5.chunk.css",
+    "static/js/830.a2903a65.chunk.js": "/cs-react-test-task/static/js/830.a2903a65.chunk.js",
+    "static/js/488.d95aa01e.chunk.js": "/cs-react-test-task/static/js/488.d95aa01e.chunk.js",
     "static/media/hero.jpg": "/cs-react-test-task/static/media/hero.1e6d8338455fae232d01.jpg",
     "static/media/Inter-SemiBold.woff2": "/cs-react-test-task/static/media/Inter-SemiBold.d873c5ea912cb7dff6d9.woff2",
     "static/media/Inter-Medium.woff2": "/cs-react-test-task/static/media/Inter-Medium.19e05b2238d4f2d8d3d5.woff2",
     "static/media/Inter-Regular.woff2": "/cs-react-test-task/static/media/Inter-Regular.e976b84791e6a5f65646.woff2",
-    "static/media/icons.svg": "/cs-react-test-task/static/media/icons.c810dadf49b4326f375fa6a60ad2f88e.svg",
+    "static/media/icons.svg": "/cs-react-test-task/static/media/icons.490c96ebc85f6f250e86a2804beec28b.svg",
     "index.html": "/cs-react-test-task/index.html",
-    "main.2212e88e.css.map": "/cs-react-test-task/static/css/main.2212e88e.css.map",
-    "main.5fbe48ea.js.map": "/cs-react-test-task/static/js/main.5fbe48ea.js.map",
+    "main.eeddeec2.css.map": "/cs-react-test-task/static/css/main.eeddeec2.css.map",
+    "main.9a4864f6.js.map": "/cs-react-test-task/static/js/main.9a4864f6.js.map",
     "674.f23d9db5.chunk.css.map": "/cs-react-test-task/static/css/674.f23d9db5.chunk.css.map",
     "674.20b0fb9e.chunk.js.map": "/cs-react-test-task/static/js/674.20b0fb9e.chunk.js.map",
-    "846.02549c11.chunk.css.map": "/cs-react-test-task/static/css/846.02549c11.chunk.css.map",
-    "846.15a07390.chunk.js.map": "/cs-react-test-task/static/js/846.15a07390.chunk.js.map",
-    "199.2ff4d3bb.chunk.css.map": "/cs-react-test-task/static/css/199.2ff4d3bb.chunk.css.map",
-    "199.606e2885.chunk.js.map": "/cs-react-test-task/static/js/199.606e2885.chunk.js.map",
-    "71.bcfb5224.chunk.js.map": "/cs-react-test-task/static/js/71.bcfb5224.chunk.js.map"
+    "238.4adb9ea7.chunk.css.map": "/cs-react-test-task/static/css/238.4adb9ea7.chunk.css.map",
+    "238.f90595fd.chunk.js.map": "/cs-react-test-task/static/js/238.f90595fd.chunk.js.map",
+    "18.4125ce16.chunk.css.map": "/cs-react-test-task/static/css/18.4125ce16.chunk.css.map",
+    "18.544ed18c.chunk.js.map": "/cs-react-test-task/static/js/18.544ed18c.chunk.js.map",
+    "830.e48043b5.chunk.css.map": "/cs-react-test-task/static/css/830.e48043b5.chunk.css.map",
+    "830.a2903a65.chunk.js.map": "/cs-react-test-task/static/js/830.a2903a65.chunk.js.map",
+    "488.d95aa01e.chunk.js.map": "/cs-react-test-task/static/js/488.d95aa01e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2212e88e.css",
-    "static/js/main.5fbe48ea.js"
+    "static/css/main.eeddeec2.css",
+    "static/js/main.9a4864f6.js"
   ]
 }
