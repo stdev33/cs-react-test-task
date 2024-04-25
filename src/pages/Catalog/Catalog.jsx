@@ -6,9 +6,11 @@ const Catalog = () => {
   return (
     <div className={css.catalogPage}>
       <aside className={css.filtersColumn}>
-        {/* Тут будуть компоненти фільтрації */}
+        {/* Filtering components goes here */}
         <div className={css.searchArea}>
-          <button className={css.searchButton}>Search</button>
+          <button type="button" className={css.searchButton}>
+            Search
+          </button>
         </div>
       </aside>
       <main className={css.advertsColumn}>

@@ -85,4 +85,13 @@ const generateEquipmentList = data => {
   return equipmentList;
 };
 
-export { generateEquipmentList };
+const formatPrice = price => {
+  return price
+    .toLocaleString('de-DE', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
+    .replace(/\./g, '');
+};
+
+export { generateEquipmentList, formatPrice };

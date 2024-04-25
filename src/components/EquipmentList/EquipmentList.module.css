@@ -1,8 +1,8 @@
 .equipmentList {
-  max-width: 526px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 8px;
   padding: 0;
+  margin: 0;
 }

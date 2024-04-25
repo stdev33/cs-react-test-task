@@ -28,11 +28,7 @@ const AdvertsList = () => {
     <div className={css.advertsListWrapper}>
       <ul className={css.advertsList}>
         {visibleAdverts.map(itemData => (
-          <AdvertItem
-            key={itemData._id}
-            data={itemData}
-            onShowMore={id => console.log(`Show more: ${id}`)}
-          />
+          <AdvertItem key={itemData._id} data={itemData} />
         ))}
       </ul>
 

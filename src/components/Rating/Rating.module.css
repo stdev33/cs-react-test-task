@@ -15,3 +15,9 @@
   text-decoration-line: underline;
   margin: 0;
 }
+
+.ratingStarOn {
+  fill: #ffc531;
+  stroke: #ffc531;
+  stroke-width: 1.2px;
+}
