@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
+import DatePicker, { registerLocale } from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import icons from '../../icons/icons.svg';
+import { enGB } from 'date-fns/locale';
 import css from './BookingForm.module.css';
+
+registerLocale('en-GB', enGB);
 
 const BookingForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    bookingDate: '',
+    bookingDate: null,
     comment: '',
   });
 
@@ -17,12 +23,19 @@ const BookingForm = () => {
     }));
   };
 
+  const handleDateChange = date => {
+    setFormData(prevFormData => ({
+      ...prevFormData,
+      bookingDate: date,
+    }));
+  };
+
   const handleSubmit = event => {
     if (formData.name && formData.email && formData.bookingDate) {
       setFormData({
         name: '',
         email: '',
-        bookingDate: '',
+        bookingDate: null,
         comment: '',
       });
     } else {
@@ -55,15 +68,30 @@ const BookingForm = () => {
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         title="Please enter a valid email address."
       />
-      <input
-        className={css.inputField}
-        type="date"
-        name="bookingDate"
-        value={formData.bookingDate}
-        onChange={handleChange}
-        required
-        placeholder="Booking Date"
-      />
+      <div className={css.calendarInputWrapper}>
+        <DatePicker
+          selected={formData.bookingDate}
+          onChange={handleDateChange}
+          minDate={new Date()}
+          calendarStartDay={1}
+          className={css.calendarInput}
+          dateFormat="dd/MM/yyyy"
+          calendarClassName={css.calendar}
+          monthClassName={date => css.calendarMonth}
+          weekDayClassName={date => css.calendarWeekDay}
+          dayClassName={date => css.calendarDay}
+          showIcon
+          toggleCalendarOnIconClick
+          icon={
+            <svg width="20" height="20" className={css.calendarIcon}>
+              <use xlinkHref={`${icons}#icon-calendar`}></use>
+            </svg>
+          }
+          placeholderText="Booking date"
+          locale="en-GB"
+          formatWeekDay={nameOfDay => nameOfDay.substring(0, 3).toUpperCase()}
+        />
+      </div>
       <textarea
         className={css.commentTextArea}
         name="comment"

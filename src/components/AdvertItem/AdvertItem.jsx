@@ -41,7 +41,11 @@ const AdvertItem = ({ data }) => {
 
         <p className={css.description}>{data.description}</p>
         <EquipmentList data={data} />
-        <button className={css.showMoreButton} onClick={handleShowMore}>
+        <button
+          type="button"
+          className={css.showMoreButton}
+          onClick={handleShowMore}
+        >
           Show more
         </button>
         <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
