@@ -20,8 +20,8 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #f2f4f7;
-  color: #e44848;
+  background-color: var(--color-block-features);
+  color: var(--color-button);
 
   font-family: inherit;
   font-size: 24px;
@@ -38,7 +38,7 @@
 }
 
 .reviewerName {
-  color: #101828;
+  color: var(--color-main);
   font-family: inherit;
   font-size: 18px;
   font-style: normal;
@@ -48,7 +48,7 @@
 }
 
 .reviewText {
-  color: #475467;
+  color: var(--color-text);
   font-family: inherit;
   font-size: 16px;
   font-style: normal;

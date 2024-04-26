@@ -6,13 +6,13 @@
 }
 
 .ratingStarOn {
-  fill: #ffc531;
-  stroke: #ffc531;
+  fill: var(--color-rating);
+  stroke: var(--color-rating);
   stroke-width: 1.2px;
 }
 
 .ratingStarOff {
-  fill: #f2f4f7;
-  stroke: #f2f4f7;
+  fill: var(--color-block-features);
+  stroke: var(--color-block-features);
   stroke-width: 1.2px;
 }

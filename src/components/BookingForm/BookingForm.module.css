@@ -12,9 +12,9 @@
   padding: 18px;
   border: none;
   border-radius: 10px;
-  background: #f7f7f7;
+  background: var(--color-inputs);
 
-  color: #101828;
+  color: var(--color-main);
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
@@ -41,9 +41,9 @@
   padding: 18px;
   border: none;
   border-radius: 10px;
-  background: #f7f7f7;
+  background: var(--color-inputs);
 
-  color: #101828;
+  color: var(--color-main);
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
@@ -84,7 +84,7 @@
   height: 32px;
   margin: 1px;
 
-  color: #475467;
+  color: var(--color-text);
   text-align: center;
   font-family: Inter;
   font-size: 14px;
@@ -93,7 +93,7 @@
 }
 
 .calendarMonth {
-  color: #101828;
+  color: var(--color-main);
   text-align: center;
   font-family: Inter;
   font-size: 16px;
@@ -104,7 +104,7 @@
 .calendarWeekDay {
   width: 41px;
   height: 14px;
-  color: #475467;
+  color: var(--color-text);
   text-align: center;
   font-family: Inter;
   font-size: 12px;
@@ -118,12 +118,12 @@
   padding: 18px;
   border: none;
   border-radius: 10px;
-  background: #f7f7f7;
+  background: var(--color-inputs);
   height: calc(1.25em * 4);
   overflow-y: auto;
   resize: none;
 
-  color: #101828;
+  color: var(--color-main);
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
@@ -149,7 +149,7 @@
   gap: 10px;
   border-style: none;
   border-radius: 200px;
-  background: #e44848;
+  background: var(--color-button);
   color: #fff;
 
   font-family: inherit;
@@ -162,5 +162,5 @@
 
 .submitButton:hover,
 .submitButton:focus {
-  background: #d84343;
+  background: var(--color-button-hover);
 }

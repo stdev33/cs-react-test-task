@@ -6,7 +6,7 @@
 }
 
 .rating {
-  color: #101828;
+  color: var(--color-main);
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
@@ -17,7 +17,7 @@
 }
 
 .ratingStarOn {
-  fill: #ffc531;
-  stroke: #ffc531;
+  fill: var(--color-rating);
+  stroke: var(--color-rating);
   stroke-width: 1.2px;
 }
