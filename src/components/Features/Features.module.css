@@ -15,7 +15,7 @@
 }
 
 .vehicleDetailsTitle {
-  color: #101828;
+  color: var(--color-main);
   font-family: inherit;
   font-size: 20px;
   font-style: normal;
@@ -25,7 +25,7 @@
 }
 
 .vehicleDetailsText {
-  color: #101828;
+  color: var(--color-main);
   text-align: center;
   font-family: inherit;
   font-size: 18px;

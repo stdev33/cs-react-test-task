@@ -9,5 +9,5 @@
 }
 
 .favoritesIcon:hover {
-  fill: #d84343;
+  fill: var(--color-button-hover);
 }
