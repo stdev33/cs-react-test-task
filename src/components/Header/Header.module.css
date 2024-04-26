@@ -28,5 +28,5 @@
 }
 
 .navItem .activeLink {
-  color: var(--color-rating);
+  color: var(--color-active-header-tab);
 }

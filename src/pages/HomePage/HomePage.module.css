@@ -10,12 +10,12 @@
 
 .title {
   font-size: 48px;
-  color: #f7f7f7;
+  color: var(--color-inputs);
 }
 
 .subtitle {
   font-size: 24px;
-  color: #f2f4f7;
+  color: var(--color-block-features);
 }
 
 .ctaButton {
@@ -27,7 +27,7 @@
   gap: 10px;
   border-style: none;
   border-radius: 200px;
-  background: #e44848;
+  background: var(--color-button);
   color: #fff;
   font-family: inherit;
   font-size: 16px;
@@ -39,7 +39,7 @@
 
 .ctaButton:hover,
 .ctaButton:focus {
-  background: #d84343;
+  background: var(--color-button-hover);
 }
 
 .features {
@@ -48,7 +48,7 @@
 
 .featuresTitle {
   font-size: 36px;
-  color: #475467;
+  color: var(--color-text);
   margin-bottom: 30px;
 }
 
@@ -64,11 +64,12 @@
 
 .featureTitle {
   font-size: 24px;
-  color: #ffc531;
+  color: var(--color-main);
   margin-bottom: 15px;
 }
 
 .featureDescription {
   font-size: 16px;
-  color: #475467;
+  color: var(--color-text);
+  text-align: left;
 }
