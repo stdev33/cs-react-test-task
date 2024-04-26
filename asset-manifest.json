@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/cs-react-test-task/static/css/main.6c449c43.css",
-    "main.js": "/cs-react-test-task/static/js/main.802a1041.js",
-    "static/css/674.f23d9db5.chunk.css": "/cs-react-test-task/static/css/674.f23d9db5.chunk.css",
+    "main.css": "/cs-react-test-task/static/css/main.0bdd6df8.css",
+    "main.js": "/cs-react-test-task/static/js/main.5fd384f9.js",
+    "static/css/674.563c7084.chunk.css": "/cs-react-test-task/static/css/674.563c7084.chunk.css",
     "static/js/674.20b0fb9e.chunk.js": "/cs-react-test-task/static/js/674.20b0fb9e.chunk.js",
-    "static/css/238.6cdcf08d.chunk.css": "/cs-react-test-task/static/css/238.6cdcf08d.chunk.css",
+    "static/css/238.2681e1d1.chunk.css": "/cs-react-test-task/static/css/238.2681e1d1.chunk.css",
     "static/js/238.f90595fd.chunk.js": "/cs-react-test-task/static/js/238.f90595fd.chunk.js",
     "static/css/18.063bb5f9.chunk.css": "/cs-react-test-task/static/css/18.063bb5f9.chunk.css",
     "static/js/18.544ed18c.chunk.js": "/cs-react-test-task/static/js/18.544ed18c.chunk.js",
@@ -17,11 +17,11 @@
     "static/media/Inter-Regular.woff2": "/cs-react-test-task/static/media/Inter-Regular.e976b84791e6a5f65646.woff2",
     "static/media/icons.svg": "/cs-react-test-task/static/media/icons.490c96ebc85f6f250e86a2804beec28b.svg",
     "index.html": "/cs-react-test-task/index.html",
-    "main.6c449c43.css.map": "/cs-react-test-task/static/css/main.6c449c43.css.map",
-    "main.802a1041.js.map": "/cs-react-test-task/static/js/main.802a1041.js.map",
-    "674.f23d9db5.chunk.css.map": "/cs-react-test-task/static/css/674.f23d9db5.chunk.css.map",
+    "main.0bdd6df8.css.map": "/cs-react-test-task/static/css/main.0bdd6df8.css.map",
+    "main.5fd384f9.js.map": "/cs-react-test-task/static/js/main.5fd384f9.js.map",
+    "674.563c7084.chunk.css.map": "/cs-react-test-task/static/css/674.563c7084.chunk.css.map",
     "674.20b0fb9e.chunk.js.map": "/cs-react-test-task/static/js/674.20b0fb9e.chunk.js.map",
-    "238.6cdcf08d.chunk.css.map": "/cs-react-test-task/static/css/238.6cdcf08d.chunk.css.map",
+    "238.2681e1d1.chunk.css.map": "/cs-react-test-task/static/css/238.2681e1d1.chunk.css.map",
     "238.f90595fd.chunk.js.map": "/cs-react-test-task/static/js/238.f90595fd.chunk.js.map",
     "18.063bb5f9.chunk.css.map": "/cs-react-test-task/static/css/18.063bb5f9.chunk.css.map",
     "18.544ed18c.chunk.js.map": "/cs-react-test-task/static/js/18.544ed18c.chunk.js.map",
@@ -30,7 +30,7 @@
     "488.d95aa01e.chunk.js.map": "/cs-react-test-task/static/js/488.d95aa01e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c449c43.css",
-    "static/js/main.802a1041.js"
+    "static/css/main.0bdd6df8.css",
+    "static/js/main.5fd384f9.js"
   ]
 }
